@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Groups in Action — A Mexico City Gathering on Symmetry and Discrete Structures</title>
+<meta name="description" content="Groups in Action: a two-day meeting on symmetry and discrete structures at the Instituto de Matemáticas, UNAM, Mexico City, September 10–11, 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#173A7A;      /* UNAM blue */
+    --ink-deep:#0F2A5C;
+    --gold:#C9A54E;     /* UNAM gold */
+    --paper:#F3F1EA;
+    --white:#FFFFFF;
+    --text:#1C2333;
+    --muted:#5B6373;
+    --rule:#D9D4C6;
+    --max:1100px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  body{margin:0;font-family:"STIX Two Text",Georgia,"Times New Roman",serif;color:var(--text);background:var(--paper);font-size:18px;line-height:1.6}
+  a{color:var(--ink)}
+  a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+  /* nav */
+  .nav{position:sticky;top:0;z-index:10;background:var(--ink-deep);color:var(--white);border-bottom:1px solid rgba(255,255,255,.12)}
+  .nav .in{max-width:var(--max);margin:0 auto;padding:.7rem 1.25rem;display:flex;gap:1.5rem;align-items:center;flex-wrap:wrap}
+  .nav .brand{font-weight:600;font-size:1.05rem;color:var(--white);text-decoration:none;margin-right:auto}
+  .nav a.l{color:rgba(255,255,255,.85);text-decoration:none;font-size:.95rem}
+  .nav a.l:hover{color:var(--gold)}
+
+  /* hero */
+  .hero{background:var(--ink);color:var(--white);overflow:hidden;position:relative}
+  .hero .in{position:relative}
+  .hero .in{max-width:var(--max);margin:0 auto;padding:4.5rem 1.25rem 4rem;display:grid;grid-template-columns:1.25fr 1fr;gap:2rem;align-items:center}
+  .hero h1{font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.02;font-weight:500;margin:0 0 1rem;letter-spacing:-.01em}
+  .hero .sub{font-size:clamp(1.15rem,2.2vw,1.5rem);font-style:italic;color:#E9E1C8;margin:0 0 2rem;max-width:30ch;line-height:1.35}
+  .hero .when{font-size:1.15rem;line-height:1.5;margin:0 0 2rem}
+  .hero .when b{font-weight:600;color:var(--gold)}
+  .btn{display:inline-block;background:var(--gold);color:var(--ink-deep);text-decoration:none;font-weight:600;padding:.8rem 1.4rem;border-radius:3px;font-size:1.05rem}
+  .btn:hover{background:#D9B75F}
+  .hero .art{justify-self:center;width:min(100%,420px)}
+  .hero .art svg{width:100%;height:auto;display:block}
+
+  /* sections */
+  section{max-width:var(--max);margin:0 auto;padding:3.5rem 1.25rem}
+  section + section{border-top:1px solid var(--rule)}
+  h2{font-size:2rem;font-weight:500;margin:0 0 1.25rem;color:var(--ink-deep)}
+  p{max-width:68ch}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:2rem 3rem}
+
+  /* speakers */
+  .speakers{list-style:none;padding:0;margin:0;columns:2;column-gap:3rem;font-size:1.2rem}
+  .speakers li{break-inside:avoid;padding:.45rem 0;border-bottom:1px solid var(--rule)}
+  .speakers li small{display:block;color:var(--muted);font-size:.85rem}
+
+  /* program */
+  .day{margin-bottom:2rem}
+  .day h3{font-size:1.35rem;font-weight:600;margin:0 0 .5rem;color:var(--ink)}
+  .day h3 span{font-weight:400;color:var(--muted)}
+  table{border-collapse:collapse;width:100%;max-width:640px}
+  td{padding:.5rem .75rem .5rem 0;vertical-align:top;border-bottom:1px solid var(--rule)}
+  td.t{white-space:nowrap;color:var(--muted);width:9rem}
+
+  /* logos */
+  .logos{display:flex;gap:3rem;align-items:center;flex-wrap:wrap;margin-top:1rem}
+  .logos img{height:96px;width:auto}
+  .logo-fallback{height:96px;padding:0 1rem;border:1px dashed var(--rule);display:none;align-items:center;color:var(--muted);font-size:.9rem;font-style:italic}
+
+  footer{background:var(--ink-deep);color:rgba(255,255,255,.8);padding:2rem 1.25rem;font-size:.95rem}
+  footer .in{max-width:var(--max);margin:0 auto}
+  footer a{color:var(--gold)}
+
+  @media (max-width:760px){
+    .hero .in{grid-template-columns:1fr;padding:3rem 1.25rem}
+    .hero .art{order:-1;width:min(70%,260px)}
+    .two{grid-template-columns:1fr}
+    .speakers{columns:1}
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav" aria-label="Main">
+  <div class="in">
+    <a class="brand" href="#top">Groups in Action</a>
+    <a class="l" href="#speakers">Speakers</a>
+    <a class="l" href="#program">Program</a>
+    <a class="l" href="#venue">Venue</a>
+    <a class="l" href="#register">Register</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="in">
+    <div>
+      <h1>Groups in Action</h1>
+      <p class="sub">A Mexico City Gathering on Symmetry and Discrete Structures</p>
+      <p class="when">
+        <b>Thursday 10 &amp; Friday 11 September, 2026</b><br>
+        Instituto de Matemáticas, UNAM<br>
+        Ciudad Universitaria, Mexico City
+      </p>
+      <a class="btn" href="https://forms.gle/WV7x6pA51yiA25Xr6" target="_blank" rel="noopener">Register (free)</a>
+    </div>
+    <div class="art" aria-hidden="true">
+      <!-- The Nauru graph, GP(12,5): an arc-transitive cubic graph -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="-110 -110 220 220">
+        <g stroke="#C9A54E" stroke-width="1.6" stroke-linecap="round" fill="none">
+          <line x1="0.00" y1="-100.00" x2="50.00" y2="-86.60"/><line x1="0.00" y1="-100.00" x2="0.00" y2="-55.00"/><line x1="0.00" y1="-55.00" x2="-27.50" y2="47.63"/>
+          <line x1="50.00" y1="-86.60" x2="86.60" y2="-50.00"/><line x1="50.00" y1="-86.60" x2="27.50" y2="-47.63"/><line x1="27.50" y1="-47.63" x2="-47.63" y2="27.50"/>
+          <line x1="86.60" y1="-50.00" x2="100.00" y2="0.00"/><line x1="86.60" y1="-50.00" x2="47.63" y2="-27.50"/><line x1="47.63" y1="-27.50" x2="-55.00" y2="0.00"/>
+          <line x1="100.00" y1="0.00" x2="86.60" y2="50.00"/><line x1="100.00" y1="0.00" x2="55.00" y2="0.00"/><line x1="55.00" y1="0.00" x2="-47.63" y2="-27.50"/>
+          <line x1="86.60" y1="50.00" x2="50.00" y2="86.60"/><line x1="86.60" y1="50.00" x2="47.63" y2="27.50"/><line x1="47.63" y1="27.50" x2="-27.50" y2="-47.63"/>
+          <line x1="50.00" y1="86.60" x2="0.00" y2="100.00"/><line x1="50.00" y1="86.60" x2="27.50" y2="47.63"/><line x1="27.50" y1="47.63" x2="0.00" y2="-55.00"/>
+          <line x1="0.00" y1="100.00" x2="-50.00" y2="86.60"/><line x1="0.00" y1="100.00" x2="0.00" y2="55.00"/><line x1="0.00" y1="55.00" x2="27.50" y2="-47.63"/>
+          <line x1="-50.00" y1="86.60" x2="-86.60" y2="50.00"/><line x1="-50.00" y1="86.60" x2="-27.50" y2="47.63"/><line x1="-27.50" y1="47.63" x2="47.63" y2="-27.50"/>
+          <line x1="-86.60" y1="50.00" x2="-100.00" y2="0.00"/><line x1="-86.60" y1="50.00" x2="-47.63" y2="27.50"/><line x1="-47.63" y1="27.50" x2="55.00" y2="0.00"/>
+          <line x1="-100.00" y1="0.00" x2="-86.60" y2="-50.00"/><line x1="-100.00" y1="0.00" x2="-55.00" y2="0.00"/><line x1="-55.00" y1="0.00" x2="47.63" y2="27.50"/>
+          <line x1="-86.60" y1="-50.00" x2="-50.00" y2="-86.60"/><line x1="-86.60" y1="-50.00" x2="-47.63" y2="-27.50"/><line x1="-47.63" y1="-27.50" x2="27.50" y2="47.63"/>
+          <line x1="-50.00" y1="-86.60" x2="0.00" y2="-100.00"/><line x1="-50.00" y1="-86.60" x2="-27.50" y2="-47.63"/><line x1="-27.50" y1="-47.63" x2="0.00" y2="55.00"/>
+        </g>
+        <g fill="#F5F1E6">
+          <circle cx="0" cy="-100" r="3.2"/><circle cx="50" cy="-86.6" r="3.2"/><circle cx="86.6" cy="-50" r="3.2"/><circle cx="100" cy="0" r="3.2"/><circle cx="86.6" cy="50" r="3.2"/><circle cx="50" cy="86.6" r="3.2"/><circle cx="0" cy="100" r="3.2"/><circle cx="-50" cy="86.6" r="3.2"/><circle cx="-86.6" cy="50" r="3.2"/><circle cx="-100" cy="0" r="3.2"/><circle cx="-86.6" cy="-50" r="3.2"/><circle cx="-50" cy="-86.6" r="3.2"/>
+          <circle cx="0" cy="-55" r="3.2"/><circle cx="27.5" cy="-47.63" r="3.2"/><circle cx="47.63" cy="-27.5" r="3.2"/><circle cx="55" cy="0" r="3.2"/><circle cx="47.63" cy="27.5" r="3.2"/><circle cx="27.5" cy="47.63" r="3.2"/><circle cx="0" cy="55" r="3.2"/><circle cx="-27.5" cy="47.63" r="3.2"/><circle cx="-47.63" cy="27.5" r="3.2"/><circle cx="-55" cy="0" r="3.2"/><circle cx="-47.63" cy="-27.5" r="3.2"/><circle cx="-27.5" cy="-47.63" r="3.2"/>
+        </g>
+      </svg>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <h2>About the meeting</h2>
+  <p>Groups in Action is a two-day gathering on the interplay between group theory and discrete structures: graphs, maps, polytopes, and other combinatorial objects with a high degree of symmetry. Talks run Thursday afternoon and all day Friday, with plenty of time for discussion in between.</p>
+  <p>Attendance is free, but please register so we can plan coffee breaks and room space.</p>
+</section>
+
+<section id="speakers">
+  <h2>Speakers</h2>
+  <ul class="speakers">
+    <li>Daniela Colmenares</li>
+    <li>Robert Jajcay</li>
+    <li>Tatiana Jajcayová</li>
+    <li>Dimitri Leemans</li>
+    <li>Elías Mochán</li>
+    <li>Antonio Montero</li>
+    <li>Primož Potočnik</li>
+    <li>Micael Toledo</li>
+    <li>Philippe Tranchida</li>
+    <li>Steve Wilson</li>
+  </ul>
+  <p style="margin-top:1.25rem;color:var(--muted)"><em>More speakers to be announced.</em></p>
+</section>
+
+<section id="program">
+  <h2>Program</h2>
+  <div class="two">
+    <div class="day">
+      <h3>Thursday 10 September <span>· afternoon</span></h3>
+      <table>
+        <tr><td class="t">15:00</td><td>Welcome</td></tr>
+        <tr><td class="t">15:15 – 16:45</td><td>Talks</td></tr>
+        <tr><td class="t">16:45 – 17:15</td><td>Coffee</td></tr>
+        <tr><td class="t">17:15 – 18:45</td><td>Talks</td></tr>
+      </table>
+    </div>
+    <div class="day">
+      <h3>Friday 11 September <span>· all day</span></h3>
+      <table>
+        <tr><td class="t">10:00 – 11:30</td><td>Talks</td></tr>
+        <tr><td class="t">11:30 – 12:00</td><td>Coffee</td></tr>
+        <tr><td class="t">12:00 – 13:30</td><td>Talks</td></tr>
+        <tr><td class="t">13:30 – 15:30</td><td>Lunch</td></tr>
+        <tr><td class="t">15:30 – 17:00</td><td>Talks</td></tr>
+        <tr><td class="t">17:00 – 17:30</td><td>Coffee</td></tr>
+        <tr><td class="t">17:30 – 18:30</td><td>Talks and closing</td></tr>
+      </table>
+    </div>
+  </div>
+  <p style="color:var(--muted)"><em>Detailed schedule with titles and abstracts coming soon.</em></p>
+</section>
+
+<section id="venue">
+  <h2>Venue</h2>
+  <div class="two">
+    <div>
+      <p>Instituto de Matemáticas, UNAM<br>
+      Circuito Exterior, Ciudad Universitaria<br>
+      Coyoacán, 04510 Mexico City</p>
+      <p>Room to be confirmed. The nearest Metro station is Universidad (Line 3); the Pumabús campus shuttle stops near the institute.</p>
+    </div>
+    <div>
+      <p><a href="https://www.matem.unam.mx" target="_blank" rel="noopener">matem.unam.mx</a></p>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Instituto+de+Matem%C3%A1ticas+UNAM" target="_blank" rel="noopener">Open in Google Maps</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="register">
+  <h2>Registration</h2>
+  <p>Registration is free and takes a minute. Please fill in the form so we know how many people to expect.</p>
+  <p><a class="btn" href="https://forms.gle/WV7x6pA51yiA25Xr6" target="_blank" rel="noopener">Register (free)</a></p>
+</section>
+
+<section id="organizers">
+  <h2>Organization</h2>
+  <p>Organized by Isabel Hubard, Instituto de Matemáticas, UNAM.</p>
+  <div class="logos">
+    <img src="logos/im-unam.png" alt="Instituto de Matemáticas, UNAM" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="logo-fallback">Instituto de Matemáticas, UNAM (logo)</div>
+    <img src="logos/unam-475.png" alt="UNAM, 475 años" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+    <div class="logo-fallback">UNAM 475 años (logo)</div>
+  </div>
+</section>
+
+<footer>
+  <div class="in">
+    Questions? Write to <a href="mailto:isahubard@im.unam.mx">isahubard@im.unam.mx</a>.<br>
+    Groups in Action · Mexico City · September 2026
+  </div>
+</footer>
+
+</body>
+</html>
